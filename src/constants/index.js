@@ -23,10 +23,29 @@ export const shoes = [
     },
 ];
 
+function randomBrandNo() {
+    const min = 1;
+    const max = 5;
+    const rand = `${Math.floor(Math.random() * (max - min + 1)) + min}k+`;
+    return rand;
+}
+function randomShoeNo() {
+    const min = 100;
+    const max = 1000;
+    const rand = `${Math.floor(Math.random() * (max - min + 1)) + min}+`;
+    return rand;
+}
+function randomCustomerNo() {
+    const min = 100;
+    const max = 500;
+    const rand = `${Math.floor(Math.random() * (max - min + 1)) + min}k+`;
+    return rand;
+}
+
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: randomBrandNo(), label: 'Brands' },
+    { value: randomShoeNo(), label: 'Shops' },
+    { value: randomCustomerNo(), label: 'Customers' },
 ];
 
 export const products = [
